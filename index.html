@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR CV</title>
+  <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+  <style>
+    body {
+      
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #e6b0ec; 
+    }
+    #contenedor {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="contenedor"></div>
+  <h2>Descarga Mi CV Personal</h2>
+  <script>
+    new QRCode(document.getElementById("contenedor"),"https://raw.githubusercontent.com/Dayanm-Sanchez/QR/main/cv_dayam.pdf") 
+  </script>
+</body>
+</html>
